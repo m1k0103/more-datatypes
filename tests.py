@@ -1,9 +1,7 @@
 from more_datatypes import Stack
 
 # tests stack length
-assert len(Stack(5).stack) == 5
-assert Stack(5).stack[0] == None
-assert Stack(5).stack[4] == None
+assert Stack(5).max_size == 5
 
 # tests stack functions
 s = Stack(2)
@@ -15,4 +13,8 @@ s.push("b")
 assert s.push("c") == False # if push fails when full
 
 # tests stack values
-assert Stack.push(None) == True # if None tries to get pushed, should still work
+assert Stack(4).push(None) == True # if None tries to get pushed, should still work
+
+
+### Queue
+
